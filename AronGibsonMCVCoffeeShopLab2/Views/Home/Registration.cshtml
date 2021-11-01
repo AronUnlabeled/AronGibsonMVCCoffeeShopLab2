@@ -1,0 +1,39 @@
+﻿@model Customer
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+<form method="post" asp-action="Result">
+    <label for="FirstName">Please Enter name</label>
+    <input type="text" name="FirstName" required="required" maxlength="50" minlength="1" id="FirstName" />
+
+    <label for="LastName">Please Enter a last name</label>
+    <input type="text" name="LastName" required="required" maxlength="50" minlength="1" id="LastName" />
+
+    <label for="Email">Please Enter an email</label>
+    <input type="text" name="Email" required="required" maxlength="50" minlength="1" id="Email" />
+
+    <label for="Password">Please Enter a Password</label>
+    <input type="Password" name="Password" required="required" maxlength="50" minlength="1" id="Password" />
+
+
+    <label for="BirthDate">Enter Birth Date</label>
+    <input type="date" name="BirthDate" required="required" />
+
+    <p>are you lactose intolerant?</p>
+
+    <label for="LactoseIntolerant">Yes</label>
+    <input type="radio" name="LactoseIntolerant" required="required" id="LactoseIntolerant" value="1" />
+
+    <label for="LactoseIntolerant">No</label>
+    <input type="radio" name="LactoseIntolerant" id="LactoseIntolerant" value="0" />
+
+
+
+    <input type="submit" />
+
+</form>
